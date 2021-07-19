@@ -272,4 +272,9 @@ object SourceElementPositioningStrategies {
         LightTreePositioningStrategies.DECLARATION_WITH_BODY,
         PositioningStrategies.DECLARATION_WITH_BODY
     )
+
+    val NOT_SUPPORTED_IN_INLINE_MOST_RELEVANT = SourceElementPositioningStrategy(
+        LightTreePositioningStrategies.NOT_SUPPORTED_IN_INLINE_MOST_RELEVANT,
+        PositioningStrategies.NOT_SUPPORTED_IN_INLINE_MOST_RELEVANT
+    )
 }

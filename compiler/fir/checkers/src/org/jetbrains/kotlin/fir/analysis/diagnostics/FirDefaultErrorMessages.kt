@@ -244,6 +244,7 @@ import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NOT_A_LOOP_LABEL
 import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NOT_A_SUPERTYPE
 import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NOT_NULL_ASSERTION_ON_CALLABLE_REFERENCE
 import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NOT_NULL_ASSERTION_ON_LAMBDA_EXPRESSION
+import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NOT_YET_SUPPORTED_IN_INLINE
 import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NO_COMPANION_OBJECT
 import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NO_ELSE_IN_WHEN
 import org.jetbrains.kotlin.fir.analysis.diagnostics.FirErrors.NO_GET_METHOD
@@ -1363,6 +1364,7 @@ class FirDefaultErrorMessages {
                 SYMBOL,
                 SYMBOL
             )
+            map.put(NOT_YET_SUPPORTED_IN_INLINE, "{0} are not yet supported in inline functions", STRING)
             map.put(SUPER_CALL_FROM_PUBLIC_INLINE, "Accessing super members from public-API inline function is deprecated", SYMBOL)
 
             //imports
